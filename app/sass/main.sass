@@ -1,0 +1,1099 @@
+
+// @import 'animate.css'
+*
+    box-sizing: border-box
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+    margin: 0
+    padding: 0
+    border: 0
+    font-size: 100%
+    font: inherit
+    vertical-align: baseline
+// make sure to set some focus styles for accessibility
+
+    &:focus
+        outline: 0
+
+/* HTML5 display-role reset for older browsers
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+    display: block
+
+body
+    line-height: 1
+
+ol, ul
+    list-style: none
+
+blockquote, q
+    quotes: none
+    &:before, &:after
+        content: ""
+        content: none
+
+table
+    border-collapse: collapse
+    border-spacing: 0
+
+input[type=search]
+    &::-webkit-search-cancel-button, &::-webkit-search-decoration, &::-webkit-search-results-button, &::-webkit-search-results-decoration
+        -webkit-appearance: none
+        -moz-appearance: none
+
+        -webkit-appearance: none
+        -moz-appearance: none
+        border: none
+        padding: 0
+
+textarea
+    overflow: auto
+    vertical-align: top
+    resize: vertical
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+
+audio, canvas, video
+    display: inline-block
+    display: inline
+    zoom: 1
+    max-width: 100%
+    display: block
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+
+audio:not([controls])
+    display: none
+    height: 0
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+
+[hidden]
+    display: none
+
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+
+html
+    font-size: 100%
+    -webkit-text-size-adjust: 100%
+    -ms-text-size-adjust: 100%
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+a
+    text-decoration: none
+    color: inherit
+    display: block
+
+a:focus
+    outline: thin dotted
+    text-decoration: none
+    color: inherit
+    display: block
+
+a:active, a:hover
+    outline: 0
+
+img
+    border: 0
+    -ms-interpolation-mode: bicubic
+    display: block
+
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+
+figure, form
+    margin: 0
+
+/**
+ * Correct margin displayed oddly in IE 6/7.
+
+/**
+ * Define consistent border, margin, and padding.
+
+fieldset
+    border: 1px solid #c0c0c0
+    margin: 0 2px
+    padding: 0.35em 0.625em 0.75em
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+
+legend
+    border: 0
+    padding: 0
+    white-space: normal
+// *margin-left: -7px
+
+/* 3
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+
+button, input, select, textarea
+    font-size: 100%
+    margin: 0
+    padding: 0
+    vertical-align: baseline
+    font: inherit
+    border: none
+    background: none
+
+button
+    border: none
+    line-height: normal
+// * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+// * the UA stylesheet.
+
+input
+    line-height: normal
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+
+button, select
+    text-transform: none
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+
+button, html input[type=button]
+    -webkit-appearance: button
+    cursor: pointer
+    *overflow: visible
+        display: block
+        line-height: 1
+
+input
+    &[type=reset], &[type=submit]
+        -webkit-appearance: button
+        cursor: pointer
+        overflow: visible
+        display: block
+        line-height: 1
+
+/**
+ * Re-set default cursor for disabled elements.
+
+button[disabled], html input[disabled]
+    cursor: default
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+
+input
+    &[type=checkbox], &[type=radio]
+        box-sizing: border-box
+        padding: 0
+        *height: 13px
+        *width: 13px
+
+    &[type=search]
+        -webkit-appearance: textfield
+        &::-webkit-search-cancel-button, &::-webkit-search-decoration
+            -webkit-appearance: none
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+
+button::-moz-focus-inner, input::-moz-focus-inner
+    border: 0
+    padding: 0
+
+//  * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+//  * 2. Improve readability and alignment in all browsers.
+
+textarea
+    overflow: auto
+
+table
+    border-collapse: collapse
+    border-spacing: 0
+
+html, button, input, select, textarea
+    color: inherit
+
+::-moz-selection, ::selection
+    background: #b3d4fc
+    text-shadow: none
+
+img
+    vertical-align: middle
+
+fieldset
+    border: 0
+    margin: 0
+    padding: 0
+
+textarea
+    resize: vertical
+
+.chromeframe
+    margin: 0.2em 0
+    background: #ccc
+    color: #000
+    padding: 0.2em 0
+
+@font-face
+    font-family: "Lato"
+    src: local("Lato Regular"), local("Lato-Regular"), url("../fonts/Lato/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato/Lato-Regular.woff") format("woff"), url("../fonts/Lato/Lato-Regular.ttf") format("truetype")
+    font-weight: 400
+    font-style: normal
+
+@font-face
+    font-family: "Lato"
+    src: local("Lato Semi Bold"), local("Lato-Semi-Bold"), url("../fonts/Lato/Lato-Semibold.woff2") format("woff2"), url("../fonts/Lato/Lato-Semibold.woff") format("woff"), url("../fonts/Lato/Lato-Semibold.ttf") format("truetype")
+    font-weight: 600
+    font-style: normal
+
+@font-face
+    font-family: "Lato"
+    src: local("Lato Bold"), local("Lato-Bold"), url("../fonts/Lato/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato/Lato-Bold.woff") format("woff"), url("../fonts/Lato/Lato-Bold.ttf") format("truetype")
+    font-weight: 700
+    font-style: normal
+
+@font-face
+    font-family: "Lato"
+    src: local("Lato Heavy"), local("Lato-Heavy"), url("../fonts/Lato/Lato-Heavy.woff2") format("woff2"), url("../fonts/Lato/Lato-Heavy.woff") format("woff"), url("../fonts/Lato/Lato-Heavy.ttf") format("truetype")
+    font-weight: 900
+    font-style: normal
+
+@font-face
+    font-family: "Raleway"
+    src: local("Raleway Extra Bold"), local("Raleway-Extra-Bold"), url("../fonts/Raleway/Raleway-ExtraBold.woff2") format("woff2"), url("../fonts/Raleway/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway/Raleway-ExtraBold.ttf") format("truetype")
+    font-weight: 800
+    font-style: normal
+
+html
+    font-size: 62.5%
+    scroll-behavior: smooth
+
+body
+    font-family: "Lato", sans-serif
+    font-weight: 400
+    font-size: 1.6rem
+    color: #000000
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    background-color: #272733
+
+.container
+    max-width: 120rem
+    padding: 0 1.4rem
+    margin: 0 auto
+    height: 100%
+
+.link-wrap
+    width: 100%
+    height: 100%
+    transition: all 0.2s linear
+    &:hover
+        text-decoration: underline
+
+.highlight-text
+    color: #43ABF0
+
+.uppercase
+    text-transform: uppercase
+    margin-right: 0.5em
+
+.btn
+    font-family: "Lato", sans-serif
+    font-weight: 400
+    font-size: 1.3rem
+    text-transform: uppercase
+    padding: 1.15em 0.77em
+    min-width: 14.08em
+    border-radius: 0.31em
+    text-align: center
+    transition: background-color 0.2s linear
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+
+.btn--blue
+    background-color: #3E9CDC
+    border: 0.1rem solid #FFFFFF
+    color: #FFFFFF
+
+    &:hover
+        background-color: #2383c4
+
+.btn--white
+    background-color: #FFFFFF
+    border: 0.1rem solid #6F6D7B
+    color: #2A2B30
+
+    &:hover
+        background-color: #ebf5fb
+
+/* W3C standard сейчас только для Firefox
+
+*
+    scrollbar-width: thin
+    scrollbar-color: #3E9CDC #3D4050
+
+    &::-webkit-scrollbar
+        height: 0.7rem
+        width: 0.7rem
+
+    &::-webkit-scrollbar-track
+        background: #3D4050
+
+    &::-webkit-scrollbar-thumb
+        background-color: #3E9CDC
+        border-radius: 0.5rem
+
+/* для Chrome/Edge/Safari
+
+.header
+    background-color: rgba(16, 16, 29, 0.9)
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    height: 10rem
+    z-index: 3
+@media (max-width: 768px)
+    .header
+        height: 5rem
+.header__inner
+    color: #FFFFFF
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 100%
+.header__logo-text
+    text-transform: uppercase
+    font-family: "Raleway", sans-serif
+    font-weight: 800
+    font-size: 2.8rem
+.header__burger
+    visibility: hidden
+@media (max-width: 768px)
+    .header__burger
+        visibility: visible
+        height: 3rem
+        width: 3rem
+        position: relative
+        overflow: hidden
+        z-index: 4
+.header__burger
+    &::before, &::after
+        content: ""
+        display: block
+        width: 8rem
+        height: 0.2rem
+        background-color: #FFFFFF
+        position: absolute
+        left: 50%
+        transform: translate(-50%, 0)
+        transition: all 0.2s linear
+    &::before
+        top: 10%
+
+    &::after
+        bottom: 10%
+
+    &:focus
+        &::before, &::after
+            top: 50%
+            transform: translate(-50%, -50%)
+
+        &::before
+            transform: translate(-50%, -50%) rotate(45deg)
+
+        &::after
+            transform: translate(-50%, -50%) rotate(-45deg)
+    &-elem
+        width: 3rem
+        height: 0.2rem
+        background-color: #FFFFFF
+        position: absolute
+        top: 50%
+        left: 0
+        transform: translateY(-50%)
+
+.header__burger:focus
+.header__burger-elem
+    visibility: hidden
+
+.header__burger:focus + .header__nav
+    left: 0
+
+@media (max-width: 768px)
+    .header__nav
+        position: absolute
+        top: 0
+        left: 100%
+        height: 100vh
+        width: 100vw
+        transition: all 0.2s linear
+
+@media (max-width: 768px)
+    .nav
+        background-color: #272733
+
+.nav__list
+    display: flex
+
+@media (max-width: 768px)
+    .nav__list
+        height: 100%
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+.nav__item + .nav__item
+    margin: 0 0 0 6rem
+
+@media (max-width: 768px)
+    .nav__item + .nav__item
+        margin: 4rem 0 0 0
+
+.nav__link
+    font-family: "Lato", sans-serif
+    font-weight: 600
+    font-size: 1.3rem
+    text-transform: uppercase
+    transition: color 0.2s linear
+    &:hover
+        color: #43ABF0
+
+@media (max-width: 768px)
+    .nav__link
+        font-size: 3.3rem
+        font-weight: 400
+        text-transform: none
+
+.cover
+    background: url("../images/dest/cover-bg.jpg") center no-repeat
+    background-size: cover
+    height: 85rem
+    padding: 10rem 0
+
+@media (max-width: 768px)
+    .cover
+        height: auto
+        background-image: url("../images/dest/cover-bg768.jpg")
+
+@media (max-width: 375px)
+    .cover
+        background-image: url("../images/dest/cover-bg375.jpg")
+
+.cover__inner
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    max-width: 80rem
+
+@media (max-width: 768px)
+    .cover__inner
+        max-width: 40rem
+
+@media (max-width: 425px)
+    .cover__inner
+        max-width: 100%
+
+.cover__title
+    font-family: "Lato", sans-serif
+    font-weight: 700
+    font-size: 4.8rem
+    line-height: 1.2
+    max-width: 80rem
+    text-transform: uppercase
+
+@media (max-width: 768px)
+    .cover__title
+        font-size: 3rem
+
+.cover__desc
+    margin-top: 8rem
+
+@media (max-width: 768px)
+    .cover__desc
+        margin-top: 4rem
+
+.cover__btns
+    margin-top: 8rem
+    display: flex
+    flex-wrap: wrap
+
+@media (max-width: 768px)
+    .cover__btns
+        margin-top: 4rem
+
+@media (max-width: 425px)
+    .cover__btn
+        width: 100%
+
+.cover__btn + .cover__btn
+    margin: 0 0 0 3rem
+
+@media (max-width: 425px)
+    .cover__btn + .cover__btn
+        margin: 3rem 0 0 0
+
+.desc-cover
+    font-family: "Lato", sans-serif
+    font-weight: 700
+    line-height: 1.2
+    font-size: 2rem
+
+@media (max-width: 768px)
+    .desc-cover
+        font-size: 1.5rem
+
+.desc-cover__list
+    margin-top: 1rem
+
+.desc-cover__item
+    font-family: "Lato", sans-serif
+    font-weight: 400
+    margin-top: 0.5rem
+
+    &::before
+        content: "-"
+        display: inline-block
+        padding: 1rem
+        line-height: 0
+
+.desc-cover__item + .desc-cover__item
+    margin-top: 0.5rem
+
+.order-registration
+    padding: 12rem 0 15rem
+    background: #272733 url("../images/img/order-registration-bg.png") center no-repeat
+    background-size: cover
+
+@media (max-width: 768px)
+    .order-registration
+        padding: 10rem 0 8rem
+
+.order-registration__title
+    text-align: center
+    font-family: "Lato", sans-serif
+    font-weight: 900
+    font-size: 3.6rem
+    color: #FFFFFF
+    text-transform: uppercase
+
+.order-registration__subtitle
+    margin-top: 3rem
+    text-align: center
+    font-family: "Lato", sans-serif
+    font-weight: 400
+    font-size: 1.8rem
+    color: #BBBBBB
+
+@media (max-width: 1024px)
+    .order-registration__inner
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+
+@media (max-width: 768px)
+    .order-registration__inner
+        display: block
+
+@media (max-width: 1024px)
+    .order-registration__scheme
+        margin-right: 2rem
+
+.order-registration__form
+    margin: 9rem 0 0 0
+
+@media (max-width: 768px)
+    .order-registration__form
+        max-width: 85%
+        margin: 4rem auto 0
+
+@media (max-width: 425px)
+    .order-registration__form
+        max-width: unset
+
+.scheme
+    margin-top: 8rem
+
+@media (max-width: 1200px)
+    .scheme
+        margin: 8rem auto
+        max-width: 100rem
+
+@media (max-width: 1024px)
+    .scheme
+        margin: 4rem 0 0 0
+
+.scheme__list
+    display: flex
+    justify-content: center
+
+@media (max-width: 1024px)
+    .scheme__list
+        flex-direction: column
+        align-items: center
+
+.scheme__item
+    position: relative
+
+    &:not(:first-child)::before
+        content: ""
+        display: block
+        width: 12rem
+        height: 0.6rem
+        background: url(../images/img/ellipse.svg) top right repeat-x
+        background-size: 2.5rem 0.6rem
+        position: absolute
+        left: -7.7rem
+        top: 5.5rem
+
+.scheme__item + .scheme__item
+    margin: 0 0 0 4rem
+
+@media (max-width: 1200px)
+    .scheme__item:not(:first-child)::before
+        left: -24%
+        top: 4rem
+
+@media (max-width: 1024px)
+    .scheme__item:not(:first-child)::before
+        background-repeat: repeat-y
+        background-position: center
+        background-size: 0.6rem 2.1rem
+        top: unset
+        bottom: 100%
+        left: 14%
+        width: 0.6rem
+        height: 11rem
+
+@media (max-width: 1200px)
+    .scheme__item + .scheme__item
+        margin: 0
+
+@media (max-width: 1024px)
+    .scheme__item + .scheme__item
+        margin: 7rem 0 0 0
+
+.scheme__elem
+    font-family: "Lato", sans-serif
+    font-weight: 400
+    font-size: 1.6rem
+    text-align: center
+    width: 20rem
+    display: flex
+    flex-direction: column
+    align-items: center
+    color: #FFFFFF
+
+.scheme__elem::before
+    content: ""
+    display: block
+    width: 10rem
+    height: 10rem
+    border-radius: 50%
+    border: 0.5rem solid #286690
+    background-color: #3E9CDC
+    margin: 0 0 2rem 0
+    background-position: center
+    background-repeat: no-repeat
+    position: relative
+    z-index: 2
+
+@media (max-width: 1024px)
+    .scheme__elem
+        flex-direction: row
+        width: 30rem
+        text-align: left
+
+@media (max-width: 1200px)
+    .scheme__elem::before
+        width: 8rem
+        height: 8rem
+
+@media (max-width: 1024px)
+    .scheme__elem::before
+        flex: 0 0 auto
+        margin: 0 2rem 0 0
+
+.scheme__item
+    &:nth-child(1) .scheme__elem::before
+        background-image: url(../images/dest/scheme-icons/search.svg)
+
+    &:nth-child(2) .scheme__elem::before
+        background-image: url(../images/dest/scheme-icons/percent.svg)
+
+    &:nth-child(3) .scheme__elem::before
+        background-image: url(../images/dest/scheme-icons/new-file.svg)
+
+    &:nth-child(4) .scheme__elem::before
+        background-image: url(../images/dest/scheme-icons/mail.svg)
+
+    &:nth-child(5) .scheme__elem::before
+        background-image: url(../images/dest/scheme-icons/banknote.svg)
+
+.form
+    font-family: "Lato", sans-serif
+    font-weight: 400
+    font-size: 1.8rem
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-areas: "system email name" "range range file" "...submit ..."
+    grid-gap: 3rem
+
+@media (max-width: 1024px)
+    .form
+        grid-template-columns: 1fr
+        grid-template-areas: "system" "email" "name" "range" "file" "submit"
+
+.form__select-wrap
+    grid-area: system
+    position: relative
+    z-index: 1
+
+.form__select
+    cursor: pointer
+    background-color: rgba(255, 255, 255, 0.85)
+    border: 0.1rem solid #FFFFFF
+    border-radius: 0.3rem
+    padding: 1.2rem 1rem
+    color: #272733
+    appearance: none
+    width: 100%
+    height: 100%
+    transition: all 0.2s linear
+
+    &::placeholder
+        color: #272733
+
+.form__select--open
+    background-color: rgba(61, 64, 80, 0.85)
+    border: 0.1rem solid #3D4050
+    color: #FFFFFF
+    border-radius: 0.3rem 0.3rem 0 0
+
+    &::placeholder
+        color: #FFFFFF
+
+.form__dataset
+    width: 100%
+    height: 0
+    overflow-y: hidden
+    position: absolute
+    top: 100%
+    visibility: hidden
+    transition: all 0.2s linear
+
+.form__select--open ~ .form__dataset
+    visibility: visible
+    height: 18rem
+
+.form__select-arrow
+    background: url("../images/img/arrow-black.svg") center no-repeat
+    width: 2rem
+    height: 2rem
+    position: absolute
+    cursor: pointer
+    top: 1.5rem
+    right: 1.5rem
+    pointer-events: none
+    transition: all 0.2s linear
+
+.form__select--open + .form__select-arrow
+    transform: rotate(180deg)
+    background: url("../images/img/arrow-white.svg") center no-repeat
+
+.form__input
+    background-color: rgba(255, 255, 255, 0.85)
+    border: 0.1rem solid #FFFFFF
+    border-radius: 0.3rem
+    padding: 1.2rem 1rem
+
+    &::placeholder
+        color: #272733
+
+.form__input--email
+    grid-area: email
+
+.form__input--name
+    grid-area: name
+
+.form__input-wrap--range
+    grid-area: range
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    align-content: space-between
+    -webkit-touch-callout: none
+
+@media (max-width: 1024px)
+    .form__input-wrap--range
+        min-height: 5rem
+
+@media (max-width: 768px)
+    .form__input-wrap--range
+        min-height: 8rem
+
+.form__input-wrap--file
+    grid-area: file
+
+.form__range-label
+    color: #FFFFFF
+
+.form__range-value
+    font-weight: 600
+    text-align: right
+    color: #FFFFFF
+
+@media (max-width: 1024px)
+    .form__range-value
+        width: 7rem
+
+@media (max-width: 768px)
+    .form__range-value
+        width: 100%
+        text-align: left
+
+.form__range
+    display: block
+    width: 100%
+    position: relative
+    background-color: #dfdfe1
+    border: 0.1rem solid #FFFFFF
+    height: 0.6rem
+    border-radius: 0.3rem
+    cursor: pointer
+
+.form__thumb
+    background-color: #42A9ED
+    border: 0.3rem solid #286690
+    width: 2.4rem
+    height: 2.4rem
+    border-radius: 50%
+    position: absolute
+    top: -1rem
+
+.form__file-label
+    font-weight: 600
+    display: block
+    border: 0.2rem solid #3E9CDC
+    padding: 1rem
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+
+    &::before
+        content: ""
+        display: inline-block
+        width: 1.8rem
+        height: 2rem
+        background: url("../images/img/file.svg") center no-repeat
+        margin-right: 1rem
+
+.form__file
+    display: none
+
+.form__submit
+    margin-top: 3rem
+    font-weight: 600
+    grid-area: submit
+
+.dataset
+    border: 0.1rem solid #3D4050
+    background-color: rgba(39, 39, 51, 0.9)
+    border-radius: 0 0 0.3rem 0.3rem
+    padding: 0.4rem
+
+.dataset__list
+    padding: 0.8rem 0
+    height: 100%
+    overflow-y: scroll
+
+    &::-webkit-scrollbar-track
+        border-radius: 0.3rem
+
+.dataset__item
+    color: #FFFFFF
+    cursor: pointer
+    padding: 0.8rem 1rem
+
+    &:hover
+        color: #42A9ED
+
+.footer
+    margin-top: auto
+    background-color: #3D4050
+
+.footer__inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+    font-family: "Lato", sans-serif
+    font-weight: 400
+    color: #FFFFFF
+    font-size: 1.3rem
+    height: 8rem
+
+@media (max-width: 1200px)
+    .footer__inner
+        height: 12rem
+
+@media (max-width: 1024px)
+    .footer__inner
+        justify-content: space-evenly
+
+@media (max-width: 768px)
+    .footer__inner
+        flex-direction: column-reverse
+        height: auto
+        padding: 2rem 0
+
+@media (max-width: 1200px)
+    .footer__copyright
+        width: 20rem
+
+@media (max-width: 768px)
+    .footer__copyright
+        margin-top: 2rem
+        text-align: center
+        width: auto
+
+.footer__separator
+    background-color: #C3C3C3
+    width: 0.1rem
+    height: 1.8rem
+
+@media (max-width: 1024px)
+    .footer__separator
+        display: none
+
+@media (max-width: 768px)
+    .footer__payment-systems
+        margin-top: 2rem
+
+.payment-systems__list
+    display: flex
+
+@media (max-width: 1024px)
+    .payment-systems__list
+        flex-direction: column
+
+@media (max-width: 768px)
+    .payment-systems__list
+        flex-direction: row
+
+    .payment-systems__item + .payment-systems__item
+        margin: 0 0 0 3.8rem
+
+@media (max-width: 1024px)
+    .payment-systems__item + .payment-systems__item
+        margin: 1rem 0 0 0
+
+@media (max-width: 768px)
+    .payment-systems__item + .payment-systems__item
+        margin: 0 0 0 2rem
+
+.payment-systems__elem
+    color: #BBBBBB
+    display: flex
+    align-items: center
+
+    &::before
+        content: ""
+        width: 2rem
+        height: 2rem
+        display: inline-block
+        margin-right: 1rem
+        flex: 0 1 auto
+
+@media (max-width: 375px)
+    .payment-systems__elem::before
+        flex: 1 0 auto
+
+.payment-systems__elem--qiwi::before
+    background: url("../images/img/payment-systems/qiwi.svg") center no-repeat
+
+.payment-systems__elem--yandex-money::before
+    background: url("../images/img/payment-systems/yandex-money.svg") center no-repeat
+
+.payment-systems__elem--web-money::before
+    background: url("../images/img/payment-systems/web-money.svg") center no-repeat
+
+.contact-links__list
+    display: flex
+
+@media (max-width: 1024px)
+    .contact-links__list
+        flex-direction: column
+
+@media (max-width: 768px)
+    .contact-links__list
+        flex-direction: row
+
+.contact-links__item + .contact-links__item
+    margin: 0 0 0 3.8rem
+
+@media (max-width: 1024px)
+    .contact-links__item + .contact-links__item
+        margin: 1rem 0 0 0
+
+@media (max-width: 768px)
+    .contact-links__item + .contact-links__item
+        margin: 0 0 0 2rem
+
+.contact-links__link
+    display: flex
+    align-items: center
+
+    &::before
+        content: ""
+        width: 2rem
+        height: 2rem
+        display: inline-block
+        margin-right: 1rem
+
+.contact-links__link--email::before
+    background: url("../images/img/contacts-icons/mail.svg") center no-repeat
+
+.contact-links__link--vk::before
+    background: url("../images/img/contacts-icons/vk.svg") center no-repeat
