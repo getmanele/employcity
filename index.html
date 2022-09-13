@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>new site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/app.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <a href="#">
+              <h1 class="header__logo-text">
+                Loremipsum.<span class="highlight-text">net</span> 
+              </h1>
+            </a>
+          </div>
+          <button class="header__burger" type="button" id="burger">
+            <div class="header__burger-elem"></div>
+          </button>
+          <nav class="header__nav nav" id="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#">Бизнес</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">О нас</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Цены</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Оформить заказ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        
+      </div>
+    </header>
+
+    <section class="cover">
+      <div class="container">
+        <div class="cover__inner">
+          <h2 class="cover__title animate__jello">
+            <span class="highlight-text">Lorem ipsum</span> 
+            dolor sit amet consectetur 
+            <span class="highlight-text">adipiscing</span>
+          </h2>
+          <div class="cover__desc desc-cover">
+            At vero eos et accusamus et iusto odio dignissimos ducimus!
+            <ul class="desc-cover__list">
+              <li class="desc-cover__item">Totam rem aperiam eaque ipsa</li>
+              <li class="desc-cover__item">Sit voluptatem accusantium doloremque laudantium</li>
+              <li class="desc-cover__item">Sed ut perspiciatis, unde omnis iste natus error</li>
+            </ul>
+          </div>
+          <div class="cover__btns">
+            <a class="cover__btn btn btn--blue" href="#form">Заказать</a>
+            <a class="cover__btn btn btn--white animate__wobble" href="#order">Подробнее</a>
+          </div>
+        </div>		
+      </div>
+    </section>
+
+    <section class="order-registration" id="order">
+      <div class="container">
+        <h2 class="order-registration__title">
+          Оформление 
+          <span class="highlight-text">заказа</span>
+        </h2>
+        <div class="order-registration__subtitle">Перед заполнением формы ознакомьтесь с нашей схемой работы!</div>
+        <div class="order-registration__inner">
+          <div class="order-registration__scheme scheme">
+            <ul class="scheme__list">
+              <li class="scheme__item">
+                <div class="scheme__elem">Lorem ipsum dolorsit amet</div>
+              </li>
+              <li class="scheme__item">
+                <div class="scheme__elem">Сonsecteturadipiscing elit</div>
+              </li>
+              <li class="scheme__item">
+                <div class="scheme__elem">Sed do eiusmod tempor</div>
+              </li>
+              <li class="scheme__item">
+                <div class="scheme__elem">Esse cillum doloreeu fugiat</div>
+              </li>
+              <li class="scheme__item">
+                <div class="scheme__elem">Excepteur sint occaecat cupidatat non proident</div>
+              </li>				
+            </ul>
+          </div>
+          <form class="order-registration__form form" action="/" id="form">
+            <div class="form__select-wrap">
+              <input class="form__select" type="text" name="type-system" id="type-system" placeholder="Выберите тип системы" readonly>
+              <div class="form__select-arrow"></div>
+              <div class="form__dataset dataset">
+                <ul class="dataset__list">
+                  <li class="dataset__item" data-option>
+                    <div class="dataset__option">Sed ut perspiciatis</div>
+                  </li>
+                  <li class="dataset__item" data-option>
+                    <div class="dataset__option">Nemo enim ipsam</div>
+                  </li>
+                  <li class="dataset__item" data-option>
+                    <div class="dataset__option">Et harum quidem</div>
+                  </li>
+                  <li class="dataset__item" data-option>
+                    <div class="dataset__option">Temporibus autem</div>
+                  </li>
+                  <li class="dataset__item" data-option>
+                    <div class="dataset__option">Itaque earum rerum</div>
+                  </li>
+                  <li class="dataset__item" data-option>
+                    <div class="dataset__option">Sed ut perspiciatis</div>
+                  </li>
+                  <li class="dataset__item" data-option>
+                    <div class="dataset__option">Nemo enim ipsam</div>
+                  </li>
+                  <li class="dataset__item" data-option>
+                    <div class="dataset__option">Et harum quidem</div>
+                  </li>
+                  <li class="dataset__item" data-option>
+                    <div class="dataset__option">Temporibus autem</div>
+                  </li>
+                  <li class="dataset__item" data-option>
+                    <div class="dataset__option">Itaque earum rerum</div>
+                  </li>
+                  <li class="dataset__item" data-option>
+                    <div class="dataset__option">Sed ut perspiciatis</div>
+                  </li>
+                  <li class="dataset__item" data-option>
+                    <div class="dataset__option">Nemo enim ipsam</div>
+                  </li>
+                  <li class="dataset__item" data-option>
+                    <div class="dataset__option">Et harum quidem</div>
+                  </li>
+                  <li class="dataset__item" data-option>
+                    <div class="dataset__option">Temporibus autem</div>
+                  </li>
+                  <li class="dataset__item" data-option>
+                    <div class="dataset__option">Itaque earum rerum</div>
+                  </li>
+                </ul>
+              </div>
+            </div>				
+            <input class="form__input form__input--email" type="email" placeholder="Ваш e-mail" name="email">
+            <input class="form__input form__input--name" type="text" placeholder="Ваше имя" name="name">
+            <div class="form__input-wrap form__input-wrap--range">
+              <label class="form__range-label" for="range">Sed ut perspiciatis, unde omnis iste natus
+              </label>
+              <input class="form__range-value" type="text" value="75%" name="range" id="range-value" readonly>
+              <div class="form__range" id="range">
+                <div class="form__thumb" id="thumb" style="left:0"></div>
+              </div>
+            </div>
+            <div class="form__input-wrap form__input-wrap--file">
+              <label class="form__file-label btn btn--white" for="file" id="file-label">Прикрепить файл</label>
+              <input class="form__file" type="file" id="file" name="file">
+            </div>
+            <input class="form__submit btn btn--blue animate__pulse" type="submit" value="Отправить">
+          </form>
+        </div>		
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__copyright">
+            © 2018 
+            <span class="uppercase">«LoremIpsum.net»</span> 
+            Все права защищены.
+          </div>
+          <div class="footer__separator"></div>
+          <div class="footer__payment-systems payment-systems">
+            <ul class="payment-systems__list">
+              <li class="payment-systems__item">
+                <div class="payment-systems__elem payment-systems__elem--qiwi">
+                  <span>
+                    <span class="uppercase">Qiwi</span>
+                    wallet
+                  </span>
+                </div>
+              </li>
+              <li class="payment-systems__item">
+                <div class="payment-systems__elem payment-systems__elem--yandex-money">
+                  Yandex Money
+                </div>
+              </li>
+              <li class="payment-systems__item">
+                <div class="payment-systems__elem payment-systems__elem--web-money">
+                  Web Money
+                </div>
+              </li>			
+            </ul>
+          </div>
+          <div class="footer__separator"></div>
+          <div class="footer__contact-links contact-links">
+            <ul class="contact-links__list">
+              <li class="contact-links__item">
+                <a class="contact-links__link contact-links__link--email link-wrap" href="mailto:info@ipsum228.com">info@ipsum228.com</a>
+              </li>
+              <li class="contact-links__item">
+                <a class="contact-links__link contact-links__link--vk link-wrap" href="https://vk.com">Мы вконтакте</a>
+              </li>
+            </ul>
+          </div>
+        </div>		
+      </div>	
+    </footer>
+    
+
+    <script src="js/app.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous">
+    </script>
+  </body>
+</html>
